@@ -1,3 +1,4 @@
+//VARIABLES
 let firstName = "Ravi";
 let lastName = "Verma";
 const PI = 3.14159;
@@ -12,6 +13,7 @@ let city = "Mumbai";
 console.log(greeting);
 console.log(city);
 
+//LOOPS
 for (let i = 0; i < 5; i++) {
   console.log(i);
 }
@@ -43,6 +45,7 @@ fruits.forEach(function (fruit) {
   console.log(fruit);
 });
 
+//CONDITIONAL STATEMENTS
 let age = 25;
 
 if (age >= 18) {
@@ -89,6 +92,8 @@ switch (day) {
 
 console.log(`Today is ${day}. ${message}`);
 
+//STRICT COMPARITION
+
 let num1 = 5;
 let num2 = 7;
 
@@ -101,6 +106,7 @@ let votingAge = 18;
 let isEligibleToVote = age >= votingAge;
 console.log(`Is Ravi eligible to vote? ${isEligibleToVote}`);
 
+//ARITHMETIC OPERATORS
 let x = 10;
 let y = 5;
 
@@ -116,6 +122,7 @@ console.log(`Product: ${product}`);
 console.log(`Quotient: ${quotient}`);
 console.log(`Remainder: ${remainder}`);
 
+//BITWISE OPERATORS
 let num1 = 5;
 let num2 = 3;
 
@@ -134,6 +141,8 @@ console.log(bitwiseNOT2);
 console.log(leftShift);
 console.log(rightShift);
 
+//OBJECTS
+
 let person = {
   firstName: "Ravi",
   lastName: "Kumar",
@@ -142,6 +151,8 @@ let person = {
 
 console.log(person.firstName);
 console.log(person["lastName"]);
+
+//ARRAY OPERATIONS
 
 let fruits = ["Apple", "Banana", "Orange"];
 
@@ -160,12 +171,16 @@ console.log(fruits);
 fruits.shift();
 console.log(fruits);
 
+//FUNCTIONS
+
 function greet(name) {
   return `Hello, ${name}!`;
 }
 
 let greeting = greet("Ravi");
 console.log(greeting);
+
+//ARROW FUNCTIONS
 
 let divide = (x, y) => x / y;
 
@@ -181,6 +196,8 @@ let person = {
 };
 
 person.fullName();
+
+//CLASSES AND INHERITANCE
 
 class Person {
   constructor(firstName, lastName) {
@@ -216,6 +233,8 @@ class Circle extends Shape {
 let circle1 = new Circle("Red", 5);
 console.log(`Color: ${circle1.getColor()}`);
 
+//EXCEPTIONS
+
 function divide(x, y) {
   if (y === 0) {
     throw new Error("Division by zero is not allowed");
@@ -229,12 +248,17 @@ try {
 } catch (error) {
   console.error("An error occurred:", error);
 }
+
+//DOM MANIPULATION
+
 let elementById = document.getElementById("myElement");
 elementById.textContent = "New Text Content";
 
 elementById.addEventListener("click", function () {
   alert("Element clicked!");
 });
+
+//CLOSURES
 
 function createClosure() {
   let outerVar = "I am from the outer function";
