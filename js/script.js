@@ -250,7 +250,23 @@ try {
 }
 
 //DOM MANIPULATION
-
+console.log(document);
+console.dir(document);
+console.log(document.domain);
+console.log(document.URL);
+console.log(document.body);
+console.log(document.head);
+console.log(document.title);
+console.log(document.all)
+document.title = 'holaa';
+console.log(document.title);
+var age=prompt("What is your age?")
+if(age>18){
+    alert("Valid to vote")
+}
+else{
+    alert("Invalid")
+}
 let elementById = document.getElementById("myElement");
 elementById.textContent = "New Text Content";
 
